@@ -1,0 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    height: 100vh;
+    width: 100%;
+    font-family:Arial, Helvetica, sans-serif ;
+    background:linear-gradient(27deg , #3b690e , #6b9364 ,#3b690e);
+}
