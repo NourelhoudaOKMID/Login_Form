@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg , #ff4ecd , #6a5cff , #00d4ff , #deea78 , #6ad4ea , #ff4ecd , #6a5cff ,#6a5cff);
+    background-size: 400% 400%;
+    animation: bgmove 30s ease infinite;
+}
+@keyframes bgmove {
+    0%{
+        background-position: 0%  50%;
+    }
+    50% {
+        background-position : 100% 50%;
+    }
+    100%{
+        background-position : 0% 50% 
+    }
+    
+}
