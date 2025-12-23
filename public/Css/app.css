@@ -9,7 +9,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg , #ff4ecd , #6a5cff , #00d4ff , #deea78 , #6ad4ea , #ff4ecd , #6a5cff ,#6a5cff);
+    background: linear-gradient(135deg , #ff4ecd , #6a5cff , #00d4ff , #deea78 , #6ad4ea  , #6a5cff ,#6a5cff);
+    /* THIS IS TO MAKE THE BACKGROUND MOVE */
     background-size: 400% 400%;
     animation: bgmove 30s ease infinite;
 }
@@ -24,4 +25,97 @@ body{
         background-position : 0% 50% 
     }
     
+}
+
+
+.login-box{
+    width : 350px;
+    padding: 30px ;
+    border-radius: 20px;
+    background: rgba(255, 255,255, 0.15);
+    /* THIS IS TO MAKE A FILTER FOR OUR LOGIN BOX */
+    backdrop-filter: blur(15px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0,3);
+    opacity: 0;
+    transform: translateY(120px);
+    animation: loginEnter 1.3s ease-out forwards;
+}
+@keyframes loginEnter {
+    0%{
+        opacity: 0;
+        transform: translateY(120px);
+    }
+    60%{
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+    100%
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+} 
+
+.login-box h2{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+.inputs{
+    margin-bottom: 20px;
+}
+
+.inputs input {
+    /* background-color: #ff4ecd; */
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 10px ;
+    border: none;
+    outline: none;
+    background:rgba(255, 255,255, 0.15) ;
+    color: #083855;
+    font-size: 14px;
+    transition:  1.5s;
+}
+/* THIS IS MAKE WE ABLE TO CHANGE THE COLOR OF THE WORDS inwith placeholder */
+.inputs input::placeholder{
+    color: rgba(27, 48, 67, 0.7);
+}
+.inputs input:focus{
+    background: rgba(255, 255,255, 0.4);
+    box-shadow : 0 0 8px #0008ffd0;
+    transform: scale(1);
+}
+
+.login-btn {
+    width :100% ;
+    padding: 12px ;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background : linear-gradient(135deg , #00ffe1 , #0095ff , #00ffe1);
+    color: #222;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 1.4s;
+}
+
+.login-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgb(0, 0, 0 , 0.4);
+}
+
+.login-btn:active{
+    transform: scale(0.95);
+}
+.forgot-pass{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+}
+.forgot-pass a {
+    text-decoration: none;
 }
