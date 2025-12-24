@@ -119,3 +119,9 @@ body{
 .forgot-pass a {
     text-decoration: none;
 }
+@media (max-width: 430px) {
+    .login-box{
+        width: 80%;
+    }
+    
+}
