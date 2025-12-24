@@ -6,7 +6,7 @@ ____________________________________________________
 __________________________________
  just gor for it and take a look 😊:
  
- # https://nourelhoudaokmid.github.io/Login_Form/
+  https://nourelhoudaokmid.github.io/Login_Form/
 
 
  # the purpose of this login_Form : 
@@ -15,7 +15,7 @@ __________________
 
 # technologies : 
 ____
-Html  | 
+Html   
 ___
 Css
 
